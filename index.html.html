@@ -356,6 +356,28 @@ button:active {
   box-shadow: 0 0 0 4px rgba(198, 40, 40, 0.25);
 }
 
+  /* =========================
+   SIGNATURE
+   ========================= */
+  
+.signature {
+  margin-top: 18px;
+  font-size: 11px;
+  color: var(--text-muted);
+  opacity: 0.65;
+  text-align: center;
+}
+
+.signature a {
+  color: var(--accent-main);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signature a:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
 
 
 /* =========================
@@ -500,6 +522,15 @@ button:active {
       <button class="theme-dot royal" onclick="setTheme('royal')" aria-label="Red and gold theme"></button>
 
     </div>
+
+      <footer class="signature fixed">
+    Go to
+    <a href="https://github.com/yourusername" target="_blank" rel="noopener">
+      github.com/yourusername
+    </a>
+    for more
+  </footer>
+    
   </div>
 </div>
 
@@ -1141,3 +1172,4 @@ setTheme(savedTheme);
 
 </body>
 </html>
+
