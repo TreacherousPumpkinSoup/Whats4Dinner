@@ -498,10 +498,12 @@ button:active {
 <canvas id="confetti"></canvas>
 
 <div class="card">
-  <h1>What's For Dinner?</h1>
+  <p>₊˚ʚ₊˚✧ ﾟ.</p>
+  <h1>Ally's Kitchen</h1> 
+  <p>₊˚ʚ₊˚✧ ﾟ.</p>
 
   <div class="controls">
-    <button onclick="generateMeal()">I'm Hungry!</button>
+    <button onclick="generateMeal()">What's For Dinner?</button>
 
     <label class="safe-toggle">
       <input type="checkbox" id="safeMode">
@@ -724,83 +726,134 @@ const proteins = [
 { name: "Halloumi & Roasted Vegetable Bowl", complete: true }
 ];
 
+// Side Dishes
 const carbs = [
-"Brown Rice",
-"White Rice",
-"Garlic Rice",
-"Lemon Rice",
-"Saffron Rice",
-"Sushi Rice",
-"Coconut Rice",
-"Fried Rice",
+  "Sesame & Chili Cucumber Salad",
+  "Smashed Cucumber Salad",
+  "Pickled Daikon & Carrot",
+  "Kimchi",
+  "Pickled Vegetables",
+  "Lotus Root Salad",
+  "Seaweed Salad",
+  "Shaved Cabbage w/ Sesame",
 
-"Wild Rice Salad",
-"Quinoa Salad",
-"Barley Salad",
-"Farro Salad",
+  "Garlic Bok Choy",
+  "Sautéed Chinese Greens",
+  "Miso Eggplant",
+  "Miso-Glazed Vegetables",
+  "Stir-Fried Green Beans",
+  "Chili-Garlic Broccoli",
+  "Soy-Glazed Mushrooms",
 
-"Vermicelli Noodles",
-"Rice Noodles",
-"Udon Noodles",
-"Soba Noodles",
+  "Peanut Sauce Vegetables",
+  "Chili Crisp Vegetables",
+  "Sesame Spinach",
+  "Japanese Spinach Goma-ae"
+  
+  "Cucumber Salad",
+  "Cucumber & Dill Yogurt Salad",
+  "Tomato & Basil Salad",
+  "Cherry Tomato Salad with Olive Oil",
+  "Pico de Gallo",
+  "Salsa Verde",
+  "Avocado & Lime Salad",
+  "Avocado Tomato Salad",
 
-"Biryani",
+  "Cabbage Slaw with Lime",
+  "Apple & Fennel Slaw",
+  "Carrot & Parsley Salad",
+  "Radish & Cucumber Salad",
 
-"Mac & Cheese",
+  "Garlic Sautéed Greens",
 
-"Orzo",
-"Orzo Salad",
+  "Cauliflower Mash",
+  "Zucchini Noodles",
+  "Spaghetti Squash",
+  "Stuffed Mushrooms",
+  "Grilled Mushrooms",
+  "Sautéed Spinach with Garlic",
 
-"Couscous",
-"Pearl Couscous",
+  "Greek Salad",
+  "Marinated Olives",
+  "Antipasto Vegetables",
+  "Roasted Red Peppers",
+  "Grilled Asparagus with Lemon",
+  "Caprese",
 
-"Farro",
-"Barley",
-"Quinoa",
+  "Tzatziki",
+  "Garlic Yogurt Sauce",
+  "Chimichurri Vegetables",
+  "Herb Butter Vegetables"
+  "Shirazi Salad",
+  "Persian Herb Salad",
+  "Fattoush Salad",
+  "Tomato & Sumac Salad",
+  "Cucumber & Mint Yogurt",
+  "Lemon Parsley Salad",
 
-"Roasted Potatoes",
-"Mashed Potatoes",
-"Potato Salad",
-"Boiled Potatoes with Herbs",
-"Crispy Potatoes",
+  "Roasted Cauliflower with Tahini",
+  "Spiced Roasted Carrots",
+  "Roasted Eggplant with Yogurt",
+  "Zaatar Roasted Vegetables",
+  "Garlic Roasted Mushrooms",
+  "Green Beans with Tomato & Garlic",
 
-"Sweet Potatoes",
-"Sweet Potato Mash",
-"Roasted Sweet Potatoes",
-"Sweet Potato Wedges",
+  "Baba Ganoush",
+  "Muhammara",
+  "Labneh",
+  "Tahini Sauce",
+  "Hummus"
 
-"Polenta",
-"Creamy Polenta",
-"Grilled Polenta",
+    "Pico de Gallo",
+  "Tomato Avocado Salsa",
+  "Mango Salsa",
+  "Jicama Slaw",
+  "Cabbage Slaw with Lime",
+  "Cucumber with Chili & Lime",
 
-"Whole Wheat Pasta",
-"Penne Pasta",
-"Spaghetti Pasta",
+  "Grilled Peppers & Onions",
+  "Calabacitas",
+  "Roasted Chayote",
+  "Spiced Black Beans",
+  "Sautéed Greens with Garlic & Chili"
+  "Beet Salad with Dill",
+  "Cucumber & Sour Cream Salad",
+  "Pickled Cabbage",
+  "Mushrooms with Dill",
+  "Sauerkraut",
+  "Braised Red Cabbage",
 
-"Gnocchi",
+  "Kachumber Salad",
+  "Carrot & Lime Salad",
+  "Cucumber Raita",
 
-"Pita Bread",
-"Flatbread",
-"Focaccia",
-"Sourdough Bread",
-"Garlic Bread",
+  "Spiced Cauliflower (Gobi)",
+  "Sautéed Okra",
+  "Cabbage Thoran",
+  "Green Beans with Mustard Seed",
+  "Spinach with Garlic"
 
-"Okinomiyaki",
-"Latkas",
+  "Caprese Salad",
+  "Marinated Olives",
+  "Roasted Artichokes",
 
-"Steamed Buns",
-"Vegetable Dumplings",
+  "Creamed Spinach",
+  "Buttered Green Beans",
+  "Grilled Asparagus",
 
-"Risotto",
-"Mushroom Risotto",
+  "Stuffed Mushrooms",
+  "Parmesan Zucchini",
 
-"Cornbread",
-"Mashed Corn",
+  "Cauliflower Rice",
+  "Mashed Cauliflower",
+  "Spaghetti Squash",
 
-"Millet",
-"Bulgur Wheat"
+  "Roasted Celeriac",
+  "Kohlrabi Fries",
+  "Turnip Mash"
 ];
 
+//🥦
 const vegetables = [
 "Roasted Broccoli",
 "Garlic Broccolini",
@@ -965,7 +1018,7 @@ const proteinPool = anyLockActive
     return;
   }
 
-  // 🍞 Carb
+  // 🍞 Side
   if (!lockCarb || !currentCarb) {
     currentCarb = pickRandom(carbs);
   }
@@ -995,7 +1048,7 @@ currentMealText =
       <input type="checkbox" id="lockCarb" ${lockCarb ? "checked" : ""}>
       <span class="icon"></span>
     </label>
-    <span class="label">Carb:</span> ${currentCarb}
+    <span class="label">Side:</span> ${currentCarb}
   </div>
 
   <div class="row animate">
@@ -1166,6 +1219,7 @@ setTheme(savedTheme);
 
 </body>
 </html>
+
 
 
 
