@@ -531,50 +531,38 @@ button:active {
 
 <script>
 const safeFoods = [
-"Fried Chicken & Chips",
-"Chicken Schnitzel",
-"Grilled Chicken & Chips",
-"Chicken Nuggets",
-"Fish & Chips",
+"Grilled Chicken with Steamed Veg",
+"Garlic Chicken Thighs with Broccoli",
+"Lemon Chicken with Green Beans",
+"Roast Chicken & Simple Salad",
 
-"Pizza",
-"Cheese Pizza",
-"Pepperoni Pizza",
-"Flatbread Pizza",
+"Baked Salmon with Lemon & Greens",
+"Salmon with Buttered Asparagus",
+"Pan-Fried Fish with Slaw",
 
-"Steak & Salad",
-"Steak & Chips",
-"Grilled Steak & Veg",
+"Steak & Green Vegetables",
+"Steak with Mushroom Sauce",
+"Sausages with Cauliflower Mash",
 
-"Burgers",
-"Cheeseburger",
-"Chicken Burger",
+"Chicken Caesar Salad",
+"Greek Salad with Grilled Chicken",
+"Tuna Salad Bowl",
+"Tuna Bake",
+"Meatloaf",
 
-"Pasta with Tomato Sauce",
-"Spaghetti Bolognese",
-"Mac & Cheese",
-"Butter Pasta",
+"Eggs & Sautéed Spinach",
+"Cheese Omelette with Greens",
+"Frittata with Vegetables",
 
-"Rice & Chicken",
-"Fried Rice",
-"Chicken Teriyaki Rice Bowl",
+"Burger Patties with Salad",
+  
+"Cauliflower Rice with Butter & Parmesan",
+"Zucchini Noodles with Pesto Chicken",
 
-"Mashed Potatoes",
-"Roast Potatoes",
-"Potato Wedges",
-
-"Grilled Sausages",
-"Sausage & Mash",
-
-"Scrambled Eggs & Toast",
-"Omelette & Toast",
-
-"Quesadilla",
-"Cheese Quesadilla",
-"Toasties",
-"Grilled Cheese Sandwich",
-"Chicken Wrap",
-"Chicken Caesar Wrap"
+"Halloumi with Roasted Vegetables",
+"Fried Halloumi & Salad",
+"Creamy Mushroom Skillet",
+"Cauliflower Cheese Bake",
 ];
 
 // ---------- HELPERS ----------
@@ -652,74 +640,80 @@ const proteins = [
 
 
 //Complete Meals
-{ name: "Bahn Mi", complete: true },
 { name: "Pork Belly Salad", complete: true },
 { name: "Mango Chicken", complete: true },
 
-{ name: "Stir Fry Noodles", complete: true },
-{ name: "Peanut Satay Noodles", complete: true },
-{ name: "Singapore Noodles", complete: true },
-{ name: "Mauritian Fried Noodles", complete: true },
-{ name: "Beef Noodles", complete: true },
-{ name: "Wonton Noodle Soup", complete: true },
-{ name: "Noodle Soup", complete: true },
-{ name: "Pho", complete: true },
+{ name: "Spicy Chicken Stir Fry", complete: true },
+{ name: "Peanut Satay Chicken", complete: true },
+{ name: "Thai Beef Stir Fry", complete: true },
+{ name: "Wonton Soup", complete: true },
+{ name: "Beef Pho", complete: true },
 { name: "Laksa", complete: true },
 
 { name: "Fish Stew", complete: true },
 { name: "Seafood Curry", complete: true },
-{ name: "Seafood Pasta", complete: true },
 { name: "Ceviche", complete: true },
 
 { name: "Ratatouille", complete: true },
 { name: "Shakshuka", complete: true },
 
 { name: "Beef Ragu", complete: true },
-{ name: "Lasagna", complete: true },
 { name: "Beef Bourguignon w Mash", complete: true },
 
 { name: "Slow Cooked Lamb Shoulder", complete: true },
 { name: "Chicken Tagine", complete: true },
 { name: "Shepherds Pie", complete: true },
 
-{ name: "Paella", complete: true },
-{ name: "Pilau", complete: true },
-
 { name: "Butter Chicken", complete: true },
 { name: "Chicken Korma", complete: true },
 { name: "Rogan Josh", complete: true },
-{ name: "Chicken Biryani", complete: true },
 { name: "Mauritian Curry", complete: true },
 { name: "Thai Green Curry", complete: true },
 { name: "Thai Red Curry", complete: true },
 { name: "Fish Vindaye", complete: true },
 
-{ name: "Katsu Curry", complete: true },
+{ name: "Japanese Curry", complete: true },
 { name: "Honey Mustard Chicken", complete: true },
-{ name: "Tandoori Chicken Wraps", complete: true },
-
-{ name: "Chicken & Sun-Dried Tomato Pasta", complete: true },
-
-{ name: "Thai Beef Salad", complete: true },
+{ name: "Tandoori Chicken", complete: true },
+{ name: "San Choi Bao", complete: true },
+  
 { name: "Tuna Sushi Bowl", complete: true },
 
 { name: "Jacket Potatoes w/ Beef", complete: true },
-
 { name: "Mahmoos Gutaifi", complete: true },
+{ name: "Grilled Chicken with Roasted Vegetables", complete: true },
+{ name: "Lemon Herb Chicken with Greek Salad", complete: true },
+{ name: "Pork Belly with Slaw & Pickles", complete: true },
+{ name: "Honey Garlic Chicken with Greens", complete: true },
+{ name: "Baked Salmon with Asparagus", complete: true },
+{ name: "Miso Salmon with Bok Choy", complete: true },
+{ name: "Garlic Butter Prawns with Zucchini", complete: true },
+{ name: "Grilled Fish with Tomato & Olive Salad", complete: true },
+{ name: "Steak with Chimichurri & Broccoli", complete: true },
+{ name: "Steak with Mushroom Sauce & Greens", complete: true },
+{ name: "Lamb Chops with Minted Vegetables", complete: true },
+{ name: "Slow Roasted Lamb with Cauliflower Mash", complete: true },
+{ name: "Chicken Caesar Salad", complete: true },
+{ name: "Thai Beef Salad", complete: true },
+{ name: "Greek Chicken Salad", complete: true },
+{ name: "Zucchini Noodle Bolognese", complete: true },
+{ name: "Eggplant Lasagna", complete: true },
+{ name: "Stuffed Zucchini Boats", complete: true },
+{ name: "Burrito Bowl", complete: true },
+{ name: "Frittata with Roasted Vegetables", complete: true },
 
-/* Vegetarian / Veg-Friendly Complete Meals */
+/* Vegetarian / Plant-Based (Low Carb) */
+{ name: "Halloumi & Roasted Vegetable Plate", complete: true },
+{ name: "Paneer with Spinach (Saag Paneer)", complete: true },
+{ name: "Tofu & Vegetable Stir Fry (Tamari)", complete: true },
+{ name: "Miso Eggplant with Sesame Greens", complete: true },
+{ name: "Cauliflower Rice Stir Fry", complete: true },
+{ name: "Stuffed Mushrooms with Herbs & Cheese", complete: true }
 { name: "Vegetable Curry", complete: true },
-{ name: "San Choi Bao", complete: true },
 { name: "Chickpea & Spinach Curry", complete: true },
-{ name: "Lentil Dahl", complete: true },
-{ name: "Vegetable Biryani", complete: true },
 { name: "Paneer Butter Masala", complete: true },
 { name: "Tofu Stir Fry", complete: true },
-{ name: "Vegetable Fried Rice", complete: true },
-{ name: "Mushroom Risotto", complete: true },
-{ name: "Eggplant Parmigiana", complete: true },
 { name: "Stuffed Capsicum Bake", complete: true },
-{ name: "Falafel Bowl", complete: true },
 { name: "Halloumi & Roasted Vegetable Bowl", complete: true }
 ];
 
@@ -1302,6 +1296,7 @@ setTheme(savedTheme);
 
 </body>
 </html>
+
 
 
 
